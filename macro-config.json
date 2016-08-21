@@ -1,0 +1,22 @@
+{
+  "twinkle": {
+    "name": "Twinkle",
+    "description": "Choose a color and randomly toggle the brightness of each LED on the board."
+  },
+  "programmable": {
+    "name": "Programmable",
+    "description": "Update each LED via a restful interface programmatically."
+  },
+  "solid-color": {
+    "name": "Solid Color",
+    "description": "Fill the board with one solid color."
+  },
+  "start-up": {
+    "name": "Start up",
+    "description": "The starting up animation"
+  },
+  "unsupported": {
+    "name": "Unsupported",
+    "description": "When a macro can't be found, this is macro is used"
+  }
+}
