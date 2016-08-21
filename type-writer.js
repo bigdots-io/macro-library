@@ -3,9 +3,12 @@
 var characters = require('./characters');
 
 class TypeWriter {
-  constructor() {
-    this.column = 0;
-    this.spaceBetweenLetters = 2;
+  constructor(options) {
+    options = options || {};
+
+    this.column = options.startingColumn || 0;
+    this.row = options.startingRow || 0;
+    this.spaceBetweenLetters = options.spaceBetweenLetters || 2;
   }
 
   text(copy, callback) {
@@ -13,14 +16,20 @@ class TypeWriter {
       var points = characters[copy[i]];
       if(points) {
         var y, x;
+        
         points.forEach((point) => {
-          [y, x] = point.split(':');
+          var coordinates = point.split(':');
+
+          y = parseInt(coordinates[0], 10)
+          x = parseInt(coordinates[1], 10)
+
           callback({
-            y: parseInt(y, 10),
-            x: this.column + parseInt(x, 10)
+            y: this.row + y,
+            x: this.column + x
           });
         });
-        this.column = this.column + parseInt(x, 10) + this.spaceBetweenLetters;
+
+        this.column = this.column + x + this.spaceBetweenLetters;
       }
     }
   }
