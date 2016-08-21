@@ -8,10 +8,9 @@ var ProgrammableMacro = require('./macros/programmable'),
 
 var MacroConfig = require('./macro-config');
 
-class MacroManager {
+class MacroLibrary {
   constructor() {
     this.Macros = {};
-    this.activateMacro = null;
   }
 
   registerMacros() {
@@ -22,18 +21,13 @@ class MacroManager {
   }
 
   availableMacros() {
-    return MacroConfig
+    return MacroConfig;
   }
 
   loadMacro(name, options) {
-    if(this.activateMacro) {
-      this.activateMacro.stop();
-    }
-
     var Macro = this.Macros[name] || UnsupportedMacro;
-    this.activateMacro = new Macro(options);
-    this.activateMacro.start();
+    return new Macro(options);
   }
 }
 
-module.exports = MacroManager;
+module.exports = MacroLibrary;
