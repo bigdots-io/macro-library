@@ -19,6 +19,14 @@ class Macro {
       }
     }
   }
+
+  setColor(color) {
+    for(var y = 0; y < height; y++) {
+      for(var x = 0; x < width; x++) {
+        this.callbacks.onPixelChange(y, x, color);
+      }
+    }
+  }
 }
 
 module.exports = Macro;

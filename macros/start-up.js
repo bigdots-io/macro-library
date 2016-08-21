@@ -13,11 +13,7 @@ class StartUpMacro extends Macro {
     var height = this.dimensions.height,
         width = this.dimensions.width;
 
-    for(var y = 0; y < height; y++) {
-      for(var x = 0; x < width; x++) {
-        this.callbacks.onPixelChange(y, x, '#000');
-      }
-    }
+    this.setColor('#000000');
 
     this.frameIndex = 0;
     this.interval = setInterval(() => {

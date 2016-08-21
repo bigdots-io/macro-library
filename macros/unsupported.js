@@ -14,6 +14,8 @@ class UnsupportedMacro extends Macro {
     var height = this.dimensions.height,
         width = this.dimensions.width;
 
+    this.setColor('#000000');
+
     var typeWriter = new TypeWriter();
     typeWriter.text("UNSUPPORTED", (item) => {
       this.callbacks.onPixelChange(item.y, item.x, '#FFFFFF');
