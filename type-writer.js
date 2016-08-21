@@ -1,3 +1,5 @@
+"use strict";
+
 var characters = require('./characters');
 
 class TypeWriter {
