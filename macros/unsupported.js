@@ -1,6 +1,7 @@
 "use strict";
 
 var Macro = require('./macro');
+var TypeWriter = require('../type-writer');
 
 const identifier = 'unsupported';
 
@@ -13,14 +14,9 @@ class UnsupportedMacro extends Macro {
     var height = this.dimensions.height,
         width = this.dimensions.width;
 
-    for(var y = 0; y < height; y++) {
-      for(var x = 0; x < width; x++) {
-        this.callbacks.onPixelChange(y, x, '#000');
-      }
-    }
-
-    data.forEach((item) => {
-      this.callbacks.onPixelChange(item[0], item[1], '#FFFFFF');
+    var typeWriter = new TypeWriter();
+    typeWriter.text("UNSUPPORTED", (item) => {
+      this.callbacks.onPixelChange(item.y, item.x, '#FFFFFF');
     });
   }
 
