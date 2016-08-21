@@ -10,9 +10,6 @@ class StartUpMacro extends Macro {
   }
 
   start() {
-    var height = this.dimensions.height,
-        width = this.dimensions.width;
-
     this.setColor('#000000');
 
     this.frameIndex = 0;

@@ -11,9 +11,6 @@ class UnsupportedMacro extends Macro {
   }
 
   start() {
-    var height = this.dimensions.height,
-        width = this.dimensions.width;
-
     this.setColor('#000000');
 
     var typeWriter = new TypeWriter();
