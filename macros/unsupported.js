@@ -1,7 +1,7 @@
 "use strict";
 
 var Macro = require('./macro');
-var TypeWriter = require('../type-writer');
+var TypeWriter = require('typewriter');
 
 const identifier = 'unsupported';
 
@@ -13,7 +13,7 @@ class UnsupportedMacro extends Macro {
   start() {
     this.setColor('#000000');
 
-    var typeWriter = new TypeWriter();
+    var typeWriter = new TypeWriter({ font: 'system-micro'});
     typeWriter.text("UNSUPPORTED", (item) => {
       this.callbacks.onPixelChange(item.y, item.x, '#FFFFFF');
     });
