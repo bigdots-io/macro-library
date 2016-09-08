@@ -4,7 +4,8 @@ var ProgrammableMacro = require('./macros/programmable'),
     TwinkleMacro = require('./macros/twinkle'),
     StartUpMacro = require('./macros/start-up'),
     SolidColorMacro = require('./macros/solid-color'),
-    UnsupportedMacro = require('./macros/unsupported');
+    UnsupportedMacro = require('./macros/unsupported'),
+    TextMacro = require('./macros/text');
 
 var MacroConfig = require('./macro-config');
 
@@ -18,6 +19,7 @@ class MacroLibrary {
     this.Macros[TwinkleMacro.identifier] = TwinkleMacro;
     this.Macros[StartUpMacro.identifier] = StartUpMacro;
     this.Macros[SolidColorMacro.identifier] = SolidColorMacro;
+    this.Macros[TextMacro.identifier] = TextMacro;
   }
 
   availableMacros() {
