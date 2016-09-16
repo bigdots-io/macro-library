@@ -1,6 +1,6 @@
 {
   "name": "macro-library",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Keeps track of all the available display macros",
   "main": "index.js",
   "scripts": {
