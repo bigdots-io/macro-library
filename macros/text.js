@@ -12,7 +12,7 @@ class SolidColorMacro extends Macro {
 
   start() {
     this.setColor('#000000');
-    
+
     var config = this.config;
     var coordinates = [];
     var typeWriter = new TypeWriter({ font: this.config.font});
@@ -21,9 +21,7 @@ class SolidColorMacro extends Macro {
       coordinates.push({y: item.y, x: item.x});
     });
 
-    var messageLength = Math.max.apply(Math, coordinates.map(function(coordinate) {
-      return coordinate.x;
-    }));
+    var messageLength = typeWriter.getWidth(this.config.text);
 
     if (messageLength > this.dimensions.width) {
       setTimeout(() => {
