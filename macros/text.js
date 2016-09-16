@@ -11,6 +11,8 @@ class SolidColorMacro extends Macro {
   }
 
   start() {
+    this.setColor('#000000');
+    
     var config = this.config;
     var coordinates = [];
     var typeWriter = new TypeWriter({ font: this.config.font});

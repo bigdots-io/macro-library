@@ -10,6 +10,8 @@ class ProgrammableMacro extends Macro {
   }
 
   start() {
+    this.setColor('#000000');
+    
     var matrixKey = this.config.matrix;
     this.matrixRef = this.db.ref(`matrices/${matrixKey}`);
     this.matrixRef.once('value').then((snapshot) => {
