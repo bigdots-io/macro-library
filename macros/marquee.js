@@ -50,9 +50,7 @@ class MarqueeMacro extends Macro {
   }
 
   stop() {
-    if (this.config.marquee) {
-      clearInterval(this.interval);
-    }
+    clearInterval(this.interval);
   }
 }
 
