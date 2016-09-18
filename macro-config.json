@@ -13,14 +13,18 @@
   },
   "start-up": {
     "name": "Start up",
-    "description": "The starting up animation"
+    "description": "The starting up animation."
   },
   "text": {
     "name": "Text",
-    "description": "Display any text with a specific color and font"
+    "description": "Display any text with a specific color and font."
+  },
+  "marquee": {
+    "name": "Marquee",
+    "description": "Display scrolling text with a specific color and font."
   },
   "unsupported": {
     "name": "Unsupported",
-    "description": "When a macro can't be found, this is macro is used"
+    "description": "When a macro can't be found, this is macro is used."
   }
 }
