@@ -1,7 +1,15 @@
 {
   "twinkle": {
     "name": "Twinkle",
-    "description": "Choose a color and randomly toggle the brightness of each LED on the board."
+    "description": "Choose a color and randomly toggle the brightness of each LED on the board.",
+    "fields": [
+      {
+        "name": "color",
+        "label": "Seed Color",
+        "inputType": "color",
+        "helpText": "The brightest hex value you want to display"
+      }
+    ]
   },
   "programmable": {
     "name": "Programmable",
@@ -9,7 +17,14 @@
   },
   "solid-color": {
     "name": "Solid Color",
-    "description": "Fill the board with one solid color."
+    "description": "Fill the board with one solid color.",
+    "fields": [
+      {
+        "name": "color",
+        "label": "Color",
+        "inputType": "color"
+      }
+    ]
   },
   "start-up": {
     "name": "Start up",
@@ -17,11 +32,60 @@
   },
   "text": {
     "name": "Text",
-    "description": "Display any text with a specific color and font."
+    "description": "Display any text with a specific color and font.",
+    "fields": [
+      {
+        "name": "color",
+        "label": "Color",
+        "inputType": "color"
+      },
+      {
+        "name": "text",
+        "label": "Text",
+        "placeholder": "What you want displayed...",
+        "input": "text"
+      },
+      {
+        "name": "font",
+        "label": "Font",
+        "input": "fontSelect"
+      }
+    ]
   },
   "marquee": {
     "name": "Marquee",
-    "description": "Display scrolling text with a specific color and font."
+    "description": "Display scrolling text with a specific color and font.",
+    "fields": [
+      {
+        "name": "color",
+        "label": "Color",
+        "inputType": "color"
+      },
+      {
+        "name": "text",
+        "label": "Text",
+        "placeholder": "What you want displayed...",
+        "input": "text"
+      },
+      {
+        "name": "font",
+        "label": "Font",
+        "input": "fontSelect"
+      },
+      {
+        "name": "speed",
+        "label": "Marquee Speed",
+        "input": "select",
+        "helpText": "The speed the text is scrolling, in milliseconds",
+        "options": [
+          {"value": "1", "label": "1"},
+          {"value": "10", "label": "10"},
+          {"value": "25", "label": "25"},
+          {"value": "50", "label": "50"},
+          {"value": "100", "label": "100"}
+        ]
+      }
+    ]
   },
   "unsupported": {
     "name": "Unsupported",
