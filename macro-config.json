@@ -22,7 +22,7 @@
       {
         "name": "color",
         "label": "Color",
-        "inputType": "color"
+        "input": "color"
       }
     ]
   },
@@ -37,7 +37,7 @@
       {
         "name": "color",
         "label": "Color",
-        "inputType": "color"
+        "input": "color"
       },
       {
         "name": "text",
@@ -59,7 +59,7 @@
       {
         "name": "color",
         "label": "Color",
-        "inputType": "color"
+        "input": "color"
       },
       {
         "name": "text",
