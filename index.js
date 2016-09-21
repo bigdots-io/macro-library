@@ -32,6 +32,10 @@ class MacroLibrary {
     var Macro = this.Macros[name] || UnsupportedMacro;
     return new Macro(options);
   }
+
+  macroConfig(name) {
+    return MacroConfig[name];
+  }
 }
 
 module.exports = MacroLibrary;
