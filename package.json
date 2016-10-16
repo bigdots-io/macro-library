@@ -1,13 +1,13 @@
 {
-  "name": "macro-library",
+  "name": "macros",
   "version": "0.11.0",
-  "description": "Keeps track of all the available display macros",
+  "description": "Repository of all available display macros.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "typewriter": "bigdots-io/typewriter.git#v0.5.4"
+    "typewriter": "bigdots-io/typewriter.git#v0.8.0"
   },
   "author": "",
   "license": "ISC"
