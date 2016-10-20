@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "typewriter": "bigdots-io/typewriter.git#v0.8.2"
+    "typewriter": "bigdots-io/typewriter.git#v0.8.2",
+    "request": "^2.75.0"
   },
   "author": "",
   "license": "ISC"
