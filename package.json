@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "typewriter": "bigdots-io/typewriter.git#v0.8.2",
+    "dot-generator": "bigdots-io/dot-generator.git#v0.9.0",
     "request": "^2.75.0"
   },
   "author": "",
