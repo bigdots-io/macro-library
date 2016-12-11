@@ -6,8 +6,6 @@ These are all the available display macros for BigDots.io LED displays.
 
 ![Twinkle macro](images/twinkle.gif)
 
-### Config options
-
 ```js
 {
   color: '#FFFFFF'
@@ -70,8 +68,6 @@ Display a sum of an item or items via json from a url. The url should return jso
 ### Image
 
 ![Image macro](images/image.png)
-
-GIF friendly!
 ![Image macro](images/image.gif)
 
 ```js
