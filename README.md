@@ -57,7 +57,7 @@ Display a sum of an item or items via json from a url. The url should return jso
 
 ```js
 {
-  color: '#FFFFFF',
+  color: '#FFFFFF'
 }
 ```
 
@@ -70,6 +70,7 @@ GIF friendly!
 
 ```js
 {
-  color: '#FFFFFF',
+  url: '',
+  speed: 10 // for GIFs
 }
 ```
