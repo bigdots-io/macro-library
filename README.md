@@ -30,6 +30,12 @@ The classic LED panel usecase...
 }
 ```
 
+### Programmable
+
+It's all on you. Use the the Node API to do whatever you want!
+
+![Programmable macro](images/programmable.png)
+
 ### Counter
 
 Display a sum of an item or items via json from a url. The url should return json in the following structure...
