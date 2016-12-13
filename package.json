@@ -1,6 +1,6 @@
 {
   "name": "macros",
-  "version": "0.22.4",
+  "version": "0.22.5",
   "description": "Repository of all available display macros.",
   "main": "index.js",
   "scripts": {
